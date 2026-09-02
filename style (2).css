@@ -1,0 +1,1226 @@
+/* =====================================================
+   DHARA SAMRIDHI
+   MAIN STYLES
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --green: #18864b;
+    --dark-green: #10683a;
+    --light-green: #eaf7ee;
+
+    --background: #f5f8f5;
+    --card: #ffffff;
+
+    --text: #18221c;
+    --muted: #68736c;
+
+    --border: #dce5de;
+
+    --shadow: 0 5px 20px rgba(0,0,0,0.07);
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: var(--background);
+
+    color: var(--text);
+
+    min-height: 100vh;
+
+    transition: 0.3s;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.header {
+
+    height: 85px;
+
+    background: var(--card);
+
+    border-bottom: 1px solid var(--border);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 6%;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+}
+
+.logo-area {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+.logo {
+
+    width: 48px;
+
+    height: 48px;
+
+    background: var(--light-green);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 25px;
+
+}
+
+.logo-area h1 {
+
+    color: var(--green);
+
+    font-size: 22px;
+
+    letter-spacing: 0.5px;
+
+}
+
+.logo-area p {
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    margin-top: 3px;
+
+}
+
+.header-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+.header-actions select {
+
+    padding: 10px 12px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    background: var(--card);
+
+    color: var(--text);
+
+}
+
+.icon-btn {
+
+    width: 42px;
+
+    height: 42px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    background: var(--card);
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.navbar {
+
+    background: var(--card);
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 10px;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+.nav-btn {
+
+    border: none;
+
+    background: transparent;
+
+    padding: 11px 18px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    color: var(--muted);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 14px;
+
+}
+
+.nav-btn:hover {
+
+    background: var(--light-green);
+
+    color: var(--green);
+
+}
+
+.nav-btn.active {
+
+    background: var(--green);
+
+    color: white;
+
+}
+
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+main {
+
+    width: 88%;
+
+    max-width: 1250px;
+
+    margin: 30px auto;
+
+}
+
+.section {
+
+    display: none;
+
+}
+
+.section.active {
+
+    display: block;
+
+}
+
+
+/* =====================================================
+   WELCOME
+===================================================== */
+
+.welcome-card {
+
+    background: linear-gradient(
+        135deg,
+        #e4f6e9,
+        #f6fbf6
+    );
+
+    border-radius: 22px;
+
+    padding: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+
+}
+
+.small-text {
+
+    color: var(--green);
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+}
+
+.welcome-card h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+
+}
+
+.welcome-card p {
+
+    color: var(--muted);
+
+}
+
+.farmer-icon {
+
+    font-size: 75px;
+
+}
+
+
+/* =====================================================
+   QUICK ACTIONS
+===================================================== */
+
+.quick-actions {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 35px;
+
+}
+
+.quick-actions button {
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    padding: 20px 10px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: var(--text);
+
+    box-shadow: var(--shadow);
+
+}
+
+.quick-actions button:hover {
+
+    transform: translateY(-3px);
+
+}
+
+.quick-actions span {
+
+    font-size: 28px;
+
+}
+
+
+/* =====================================================
+   SECTION HEADINGS
+===================================================== */
+
+.section-title,
+.section-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+}
+
+.section-heading h2,
+.section-title h2 {
+
+    font-size: 25px;
+
+}
+
+.section-heading p,
+.section-title p {
+
+    color: var(--muted);
+
+    margin-top: 5px;
+
+}
+
+.live-badge {
+
+    background: #e5f7eb;
+
+    color: var(--green);
+
+    padding: 8px 12px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+}
+
+
+/* =====================================================
+   PRICE CARDS
+===================================================== */
+
+.price-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+
+}
+
+.price-card {
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    padding: 20px;
+
+    border-radius: 17px;
+
+    box-shadow: var(--shadow);
+
+}
+
+.crop-emoji {
+
+    font-size: 40px;
+
+    margin-bottom: 10px;
+
+}
+
+.price-card h3 {
+
+    margin-bottom: 10px;
+
+}
+
+.price-card p {
+
+    color: var(--muted);
+
+}
+
+.trend {
+
+    display: inline-block;
+
+    margin-top: 12px;
+
+    padding: 5px 9px;
+
+    border-radius: 15px;
+
+    font-size: 12px;
+
+}
+
+.trend.up {
+
+    background: #e4f7ea;
+
+    color: #168345;
+
+}
+
+.trend.down {
+
+    background: #fff0ed;
+
+    color: #d14c38;
+
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.primary-btn {
+
+    border: none;
+
+    background: var(--green);
+
+    color: white;
+
+    padding: 12px 18px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+}
+
+.primary-btn:hover {
+
+    background: var(--dark-green);
+
+}
+
+.full {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+}
+
+.location-btn {
+
+    background: var(--light-green);
+
+    color: var(--green);
+
+    border: 1px solid #bde1c9;
+
+    padding: 12px 17px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+}
+
+
+/* =====================================================
+   CATEGORY TABS
+===================================================== */
+
+.category-tabs {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+
+}
+
+.category-btn {
+
+    padding: 12px 20px;
+
+    border: 1px solid var(--border);
+
+    background: var(--card);
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    color: var(--text);
+
+}
+
+.category-btn.active {
+
+    background: var(--green);
+
+    color: white;
+
+}
+
+
+/* =====================================================
+   CROP GRID
+===================================================== */
+
+.crop-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+
+}
+
+.crop-item {
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 17px;
+
+    padding: 20px;
+
+    box-shadow: var(--shadow);
+
+}
+
+.crop-item .emoji {
+
+    font-size: 42px;
+
+    margin-bottom: 12px;
+
+}
+
+.crop-item h3 {
+
+    margin-bottom: 8px;
+
+}
+
+.crop-item p {
+
+    color: var(--muted);
+
+    margin-bottom: 6px;
+
+}
+
+.crop-price {
+
+    color: var(--green);
+
+    font-weight: bold;
+
+    font-size: 18px;
+
+}
+
+
+/* =====================================================
+   BUYERS
+===================================================== */
+
+.buyer-list {
+
+    display: grid;
+
+    gap: 15px;
+
+}
+
+.buyer-card {
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    display: grid;
+
+    grid-template-columns: 55px 1fr auto;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+.buyer-logo {
+
+    width: 55px;
+
+    height: 55px;
+
+    background: var(--light-green);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 25px;
+
+}
+
+.buyer-card h3 {
+
+    margin-bottom: 5px;
+
+}
+
+.buyer-card p {
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+}
+
+
+/* =====================================================
+   PRICE COMPARISON
+===================================================== */
+
+.compare-box {
+
+    background: var(--card);
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    border: 1px solid var(--border);
+
+    margin-bottom: 20px;
+
+}
+
+.compare-box label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+}
+
+.compare-box select {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 9px;
+
+    background: var(--card);
+
+    color: var(--text);
+
+}
+
+.comparison-table {
+
+    display: grid;
+
+    gap: 10px;
+
+}
+
+.offer {
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 13px;
+
+    padding: 18px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 150px 120px;
+
+    align-items: center;
+
+}
+
+.best-offer {
+
+    border: 2px solid var(--green);
+
+    background: var(--light-green);
+
+}
+
+.offer-price {
+
+    color: var(--green);
+
+    font-weight: bold;
+
+    font-size: 19px;
+
+}
+
+
+/* =====================================================
+   SALES
+===================================================== */
+
+.sales-summary {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 25px;
+
+}
+
+.sales-summary > div {
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+}
+
+.sales-summary span {
+
+    font-size: 25px;
+
+}
+
+.sales-summary p {
+
+    color: var(--muted);
+
+    margin: 10px 0;
+
+}
+
+.sales-summary h2 {
+
+    color: var(--green);
+
+}
+
+.sales-table {
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+}
+
+.table-header,
+.table-row {
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+
+    padding: 17px;
+
+    gap: 10px;
+
+}
+
+.table-header {
+
+    background: var(--light-green);
+
+    font-weight: bold;
+
+}
+
+.table-row {
+
+    border-top: 1px solid var(--border);
+
+}
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+.modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.55);
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: 500;
+
+}
+
+.modal.show {
+
+    display: flex;
+
+}
+
+.modal-content {
+
+    background: var(--card);
+
+    width: 90%;
+
+    max-width: 450px;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    position: relative;
+
+}
+
+.modal-content h2 {
+
+    margin-bottom: 20px;
+
+}
+
+.modal-content label {
+
+    display: block;
+
+    margin: 15px 0 7px;
+
+    font-weight: bold;
+
+}
+
+.modal-content input,
+.modal-content select {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 9px;
+
+    background: var(--card);
+
+    color: var(--text);
+
+}
+
+.close-btn {
+
+    position: absolute;
+
+    right: 15px;
+
+    top: 12px;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    color: var(--text);
+
+}
+
+
+/* =====================================================
+   VOICE ASSISTANT
+===================================================== */
+
+.voice-box {
+
+    display: none;
+
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 25px;
+
+    width: 300px;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    background: var(--card);
+
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+
+    text-align: center;
+
+    z-index: 600;
+
+    border: 2px solid var(--green);
+
+}
+
+.voice-box.show {
+
+    display: block;
+
+}
+
+.voice-icon {
+
+    font-size: 45px;
+
+    margin-bottom: 10px;
+
+}
+
+.voice-box p {
+
+    color: var(--muted);
+
+    margin: 10px;
+
+}
+
+.voice-box button {
+
+    padding: 9px 18px;
+
+    border: none;
+
+    background: var(--green);
+
+    color: white;
+
+    border-radius: 8px;
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    text-align: center;
+
+    padding: 35px;
+
+    color: var(--muted);
+
+    border-top: 1px solid var(--border);
+
+    margin-top: 50px;
+
+}
+
+footer strong {
+
+    color: var(--green);
+
+}
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark {
+
+    --background: #101612;
+
+    --card: #18211b;
+
+    --text: #edf6ef;
+
+    --muted: #aab6ad;
+
+    --border: #2c3930;
+
+    --light-green: #203b2a;
+
+}
+
+body.dark .welcome-card {
+
+    background: linear-gradient(
+        135deg,
+        #193724,
+        #18251d
+    );
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .price-grid,
+    .crop-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .quick-actions {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .header {
+
+        height: auto;
+
+        padding: 15px;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+    .navbar {
+
+        overflow-x: auto;
+
+        justify-content: flex-start;
+
+    }
+
+    main {
+
+        width: 94%;
+
+    }
+
+    .welcome-card {
+
+        padding: 25px;
+
+    }
+
+    .welcome-card h2 {
+
+        font-size: 23px;
+
+    }
+
+    .farmer-icon {
+
+        font-size: 50px;
+
+    }
+
+    .price-grid,
+    .crop-grid,
+    .quick-actions,
+    .sales-summary {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .section-heading {
+
+        align-items: flex-start;
+
+        gap: 15px;
+
+        flex-direction: column;
+
+    }
+
+    .buyer-card {
+
+        grid-template-columns: 45px 1fr;
+
+    }
+
+    .buyer-card button {
+
+        grid-column: 1 / -1;
+
+    }
+
+    .offer {
+
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+
+    }
+
+    .table-header,
+    .table-row {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+}
